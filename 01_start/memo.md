@@ -40,3 +40,55 @@ undefined
 Javascript는 실수를 64비트 부동소수점으로 저장한다.
 
 큰 실수를 다룰때 BigNumber.js, Big.js, Deciaml.js 라이브러리를 쓰는게 좋다.
+
+## 연산자
+
+문자열과 숫자를 연산하면 숫자를 문자열로 타입cast를 하고 문자열로 계산한다.
+
+```javascript
+    // 숫자와 문자 연산
+    var x = 5 + 5;
+    var y = "5" + 5;
+    console.log(x);
+    console.log(y);
+```
+
+```javascript
+    // 비교 연산자
+    console.log(1 == 1); # ==> true
+    console.log(1 == "1"); # ==> true
+    console.log(1 === "1"); # ==> false // 값과 data type까지 비교함
+    console.log(1 != 3);
+    console.log(1 != "1");
+    console.log(1 !== "1");
+```
+
+## 반복문
+
+for-in 구문이 배열 인덱스를 순회하는게 좀 이상하다.
+
+객체가 가진 key를 for-in 가 나오게 한거 같다. 대신 for-of 구문이 객체 값을 읽는다.
+
+```javascript
+    // foreach
+    var numbers = [42, 23, 5, 7];
+    for (var idx in numbers) {
+      console.log(numbers[idx]);
+    }
+
+    var person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+    };
+
+    for (var key in person) {
+      console.log(person[key]);
+    }
+
+    var numbers = [42, 23, 5, 7];
+    for (var val of numbers) {
+      console.log(val);
+    }
+
+```

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // for loop
+    for (var i = 0; i < 5; i++) {
+      console.log("number: " + i);
+    }
+
+    var numbers = [42, 23, 5, 7];
+    var len = numbers.length;
+
+    for (var i = 0; i < len; i++) {
+      console.log("numebers[" + i + "]: " + numbers[i]);
+    }
+
+    var numbers = [42, 23, 5, 7];
+    for (var idx in numbers) {
+      console.log(numbers[idx]);
+    }
+
+    var person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+    };
+
+    for (var key in person) {
+      console.log(person[key]);
+    }
+    
+    var numbers = [42, 23, 5, 7];
+    for (var val of numbers) {
+      console.log(val);
+    }
+  </script>
+</body>
+</html>
