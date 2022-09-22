@@ -24,3 +24,19 @@ let 키워드로 변수 선언은 중복 선언을 할 수 없다.
 const 키워드는 상수 선언이다.
 
 > const 변수에 값 변경하면 TypeError가 발생한다.
+
+## 데이터 타입
+
+undefined 는 하나의 데이터 타입으로 평가한다.
+
+```javascript
+>>> let u;
+>>> console.log(u);
+undefined
+```
+
+## 부동 소수점
+
+Javascript는 실수를 64비트 부동소수점으로 저장한다.
+
+큰 실수를 다룰때 BigNumber.js, Big.js, Deciaml.js 라이브러리를 쓰는게 좋다.
