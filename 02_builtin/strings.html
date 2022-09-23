@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    console.log(txt.length);
+
+    var str = "Please locate where 'locate'";
+
+    console.log(str.indexOf("locate"));
+    console.log(str.indexOf("John"));
+
+    console.log(str.lastIndexOf("locate"));
+  
+    console.log(str.search("locate"));
+
+    // slice
+    //           "0123456789012345678"
+    var fruits = "Apple, Banana, Kiwi";
+    console.log(fruits.slice(7,13));
+    console.log(fruits.slice(7));
+    console.log(fruits.slice(-12, -6));
+
+    console.log(fruits.substring(7,13));
+
+    console.log(fruits.substr(7,6));
+  
+    var birthday = "1981-02-04";
+    console.log(birthday.substring(0, birthday.indexOf("-")));
+
+    var str = "Please visit here here here";
+    var str2 = str.replace("here", "there");
+    var str3 = str.replace(/here/gi, "there");
+    console.log(str2);
+    console.log(str3);
+
+    console.log(str.toUpperCase());
+  
+    var txt1 = "Hello";
+    var txt2 = "World";
+    console.log(txt1.concat(txt2));
+
+    var str = "     Hello World      ";
+    console.log(str);
+    console.log(str.trim());
+
+    var str = "5";
+    console.log(str.padStart(4,0));
+    console.log(str.padEnd(4,0));
+
+    console.log(txt1.charAt(0));
+  </script>
+</body>
+</html>
