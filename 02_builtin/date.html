@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <script>
+    var d = new Date();
+    console.log(d);
+
+    // month는 0-based
+    // day는 1-based
+    var d = new Date(2022,8,25,8,44,33);
+    console.log(d);
+
+    var year = d.getFullYear();
+    var month = d.getMonth();
+    var date = d.getDate(); // 일 숫자
+    var day = d.getDay(); // 요일
+    // 일(0),월(1),화(2), 수(3), 목(4), 금(5), 토(6)
+    var timezone = d.getTimezoneOffset();
+    var utcYear = d.getUTCFullYear();
+
+    console.log("year", year);
+    console.log("month", month);
+    console.log("date", date);
+    console.log("day", day);
+    console.log("timezone", timezone);
+
+    console.log("utcYear", utcYear);
+
+    // momemnt js
+    console.log(moment().format("YYYY-MM-DD"));
+    console.log(moment().subtract(7, "days").format("YYYY-MM-DD"));
+
+  </script>
+</body>
+</html>

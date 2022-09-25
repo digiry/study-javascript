@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <div id="div1"></div>
+  <script>
+    var fruits = ["Banana", "Orange", "Apple"];
+    console.log(fruits.toString());
+
+    console.log(fruits.join(","));
+    var txt = "Banana<br>";
+    txt += "Orange<br>";
+    txt += "Apple<br>";
+
+    var arr = [];
+    arr.push("Banana");
+    arr.push("Ornage");
+    arr.push("Apple");
+    
+    // document.getElementById("div1").innerHTML = txt;
+    document.getElementById("div1").innerHTML = arr.join("<br>");
+
+    var str = fruits.pop();
+    console.log(str);
+    console.log(fruits);
+
+    fruits.push("Kiwi");
+    console.log(fruits);
+
+    var poped = fruits.shift();
+    console.log(poped);
+
+    fruits.unshift("Lemon");
+    console.log(fruits);
+
+    fruits[0] = "Banana";
+    console.log(fruits);
+    
+    var fruits = ["Banana", "Orange", "Apple"];
+    fruits.splice(1,0,"Lemon", "Kiwi");
+    console.log(fruits);
+
+    var myBoys = ["Eunhyeok"];
+    var myGirls = ["Eunseo", "Eunsol"];
+    var myChildren = myBoys.concat(myGirls);
+    console.log(myChildren);
+
+    console.log(fruits);
+    var fruits2 = fruits.slice(1,2);
+    console.log(fruits2);
+
+    console.log(fruits.sort());
+    
+    var points = [40, 100, 70, 21, 99];
+    console.log(points.sort());
+
+    points.sort(function(a,b) {
+      return b - a;
+    })
+    console.log(points);
+
+    var persons = [
+      {name:"유재석", point:78},
+      {name:"김종국", point:92},
+      {name:"양세찬", point:76},
+      {name:"하하", point:81},
+    ];
+
+    persons.sort(function(a, b) {
+      return a.point - b.point;
+    });
+    console.log(persons);
+
+    var pass = persons.filter(function(person) {
+      return person.point > 80;
+    });
+    console.log(pass);
+
+    var total = 0;
+    var arr1 = [1,2,3,4];
+    for (var x of arr1) {
+      total += x;
+    }
+    console.log(total);
+
+    var total = arr1.reduce(function(a, c) {
+      return a + c;
+    });
+    console.log(total);
+
+    var userList = [
+      {firstName: "재석", lastName: "유", email: "yu@gmail.com"},
+      {firstName: "종국", lastName: "김", email: "kim@gmail.com"},
+      {firstName: "세찬", lastName: "양", email: "yang@gmail.com"},
+      {firstName: "석진", lastName: "지", email: "ji@gmail.com"},
+    ];
+
+    var userList2 = userList.map(function(user) {
+      return {fullName:user.lastName + user.firstName, firstName: user.firstName, lastName: user.lastName };
+    });
+    console.log(userList2);
+
+  </script>
+</body>
+</html>

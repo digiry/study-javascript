@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    console.log("Hello world");
+    console.info("Hello world");
+    console.warn("Hello world");
+    console.error("Hello world");
+
+    var userList = [
+      {firstName: "재석", lastName: "유", email: "yu@gmail.com"},
+      {firstName: "종국", lastName: "김", email: "kim@gmail.com"},
+      {firstName: "세찬", lastName: "양", email: "yang@gmail.com"},
+      {firstName: "석진", lastName: "지", email: "ji@gmail.com"},
+    ];
+
+    console.table(userList);
+
+    function a() {
+      console.time();
+
+      console.timeEnd();
+    }
+    
+    a();
+
+    console.log("This is %cstyle message", "color:yellow;background-color:blue;padding:4px;");
+  </script>
+</body>
+</html>
