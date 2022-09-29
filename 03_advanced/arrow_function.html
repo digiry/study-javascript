@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function hello() {
+      console.log("Hello World");
+      return "Hello World";
+    }
+
+    var helloFunc = function() {
+      console.log("Hello World");
+      return "Hello World";
+    }
+
+    var helloFunc2 = () => {
+      console.log("Hello World");
+      return "Hello World";
+    }
+
+    var helloFunc3 = () => "Hello World";
+    var helloFunc4 = (fullName) => "Hello" + fullName;
+    var helloFunc5 = (firstName, lastName) => "Hello" + firstName + " " + lastName;
+
+    console.log(helloFunc4("John Doe"));
+    console.log(helloFunc5("John", "Doe"));
+
+  </script>
+</body>
+</html>

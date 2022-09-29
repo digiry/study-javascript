@@ -23,3 +23,13 @@ javascript `function`으로 선언한 부분을 html을 읽어서 해석할 때 
 ## default parameter
 
 ES6 (Ecmascript 6 버전)에 추가된 기능임
+
+## arrow function
+
+익명함수에서 `function` 키워드를 삭제하고 `=>` 기호를 중간에 넣는다. 익명함수, arrow 함수도 마찬가지로 함수를 선언할 뿐이다.
+
+호출하는 코드가 있어야 함수가 실행된다.
+
+## Template literal
+
+문자열 포맷팅하는 구문이다. 문자열 처리 구문을 간략하게 만들 수 있음

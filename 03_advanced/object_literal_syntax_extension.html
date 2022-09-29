@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var firstName = "John";
+    var lastName = "Doe";
+
+    // Object 표기법에서 key 이름은 변수 참조가 아님
+    var person = {
+      firstName: firstName,
+      lastName: lastName,
+    };
+
+    var type = "student";
+    var person2 = {
+      [type]: "Jone",
+      score: 95,
+    };
+
+    console.log(person2);
+
+    var type2 = "score";
+
+    person2[type2] = 70;
+    console.log(person2);
+    
+
+  </script>
+</body>
+</html>
