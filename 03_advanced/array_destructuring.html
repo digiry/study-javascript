@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function getScores() {
+      return [70, 80, 90];
+    }
+
+    var scores = getScores();
+    console.log(scores);
+    console.log(scores[0]);
+
+    var [x, y, z] = getScores();
+    console.log(x);
+    console.log(y);
+    console.log(z);
+
+    function getLocation() {
+      return [123.12, 23.023];
+    }
+
+    var [latitude, longitude] = getLocation();
+
+    console.log(latitude);
+  </script>
+</body>
+</html>

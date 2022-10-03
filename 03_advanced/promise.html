@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+
+    var url = "";
+    var data = axios.get(url).then(function(response) {
+      console.log(response.data);
+      return response.data;
+    });
+
+    var total = 0;
+    for (var item of data) {
+      total += item.data;
+    }
+
+    console.log(total);
+
+    function getData() {
+
+      return new Promise(function(resolve, reject) {
+        axios.get(url).then(function(response) {
+          console.log(response.data);
+          resolve(response.data); // return 대신 resolve로 연결된 함수호출
+        });
+      });
+    }
+
+    var total = 0;
+    getData().then(function(data) {
+      for (var item of data) {
+        total += item.price;
+      }
+
+      console.log(total);
+    })
+
+  </script>
+</body>
+</html>
