@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script src="scripts/module.js" type="module"></script> -->
+
+  <script type="module">
+    import {log, error} from "./scripts/module.js";
+
+    log("log로 메시지 출력");
+    error("error로 메시지 출력");
+  </script>
+  <script src="./scripts/ref.js" type="module">
+  </script>
+  <!-- <script>
+    log("log로 메시지 출력");
+    error("error로 메시지 출력");
+  </script> -->
+</body>
+</html>
