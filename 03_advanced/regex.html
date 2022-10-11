@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    var pattern = /World/i; // i: modifier 중 case insensitive
+
+    var str = "Hello WORLD!";
+    console.log(str.search("World"));
+
+    console.log(str.search(pattern));
+
+    console.log(str.replace(pattern, "Jeremy"));
+    
+    var str2 = "Hello WORLD! world!";
+    console.log(str2.replace(/world/i, "Jeremy"));
+    console.log(str2.replace(/world/ig, "Jeremy")); // g - global
+
+    var str3 = "Is this all there is";
+    var pattern3 = /[hat]/g;
+    var result3 = str3.match(pattern3);
+    console.log(result3);
+
+    var str4 = "1234abc4523kkk";
+    var pattern4 = /[0-9]/g;
+    var result4 = str4.match(pattern4);
+    console.log(result4);
+
+    var str5 = "re, green, red, gree, gen, red, blue, yellow";
+    var pattern5 = /(red|green)/g;
+    var result5 = str5.match(pattern5);
+    console.log(result5);
+
+    var str6 = "Give 100";
+    var pattern6 = /\d/g;
+    var result6 = str6.match(pattern6);
+    console.log(result6);
+
+    var str7 = "HELLO, LOOK AT ME!";
+    var pattern7 = /\bLO/g;
+    var result7 = str7.search(pattern7);
+    console.log(result7);
+
+    var pattern8 = /\d{5}/;
+    var postalcode = "23452";
+    console.log(pattern8.test(postalcode));
+  </script>
+</body>
+</html>
