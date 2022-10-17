@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  Text:<br>
+  <input type="text" id="text1" value="ABC"></input>
+
+  <br>
+  <label>
+    <input type="checkbox" name="chk_interest" id="it">IT/컴퓨터</input>
+  </label>
+  <label>
+    <input type="checkbox" name="chk_interest" id="entertain">엔터에인먼트</input>
+  </label>
+  <label>
+    <input type="checkbox" name="chk_interest" id="sports">스포츠</input>
+  </label>
+  <label>
+    <input type="checkbox" name="chk_interest" id="shopping">쇼핑</input>
+  </label>
+  <label>
+    <input type="checkbox" name="chk_interest" id="book">도서/책</input>
+  </label>
+
+  <br>
+  <button type="button" onclick="doSave();">Save</button>
+  <script>
+
+   function doSave() {
+    var oText1 = document.getElementById("text1");
+    console.log(oText1.value);
+
+    var textValue = oText1.value;
+    console.log(textValue);
+
+    var oCheckbox = document.getElementsByName("chk_interest");
+    console.log(oCheckbox);
+
+    var oCheckbox2 = document.querySelectorAll("[name=chk_interest]:checked");
+    console.log(oCheckbox2);
+   } 
+
+  </script>
+</body>
+</html>
